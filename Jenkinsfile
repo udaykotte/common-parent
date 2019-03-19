@@ -8,9 +8,9 @@ pipeline {
 
     tools {
 
-        maven 'Maven3.3.9'
+        maven 'apigee-maven'
 
-        java 'java1.8'
+        jdk 'java1.8'
 
     }
 
