@@ -10,7 +10,7 @@ pipeline {
 
         maven 'apigee-maven'
 
-        java 'java1.8'
+        JDK 'java'
 
     }
 
