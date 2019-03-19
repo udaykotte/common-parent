@@ -1,67 +1,10 @@
 pipeline {
-
-    agent {
-
-        label "windows"
-
-    }
-
-    tools {
-
-        maven 'apigee-maven'
-
-        JDK 'java'
-
-    }
-
+    agent any
     stages {
-
-        stage ('Initialize') {
-
+        stage('Example') {
             steps {
-
-                bat '''
-
-                    echo "PATH = %PATH%"
-
-                    echo "MAVEN_HOME = %MAVEN_HOME%"
-
-                '''
-
+                echo 'Hello World'
             }
-
         }
-
-
-
-        stage ('Build') {
-
-            steps {
-
-                    bat 'cd NumberGenerator & mvn install'
-
-            }
-
-             post {
-
-                success {
-
-                    junit 'NumberGenerator/target/surefire-reports/*.xml'
-
-                        }
-
-                 }
-
-               
-
-
-
-           
-
-            }
-
-        }
-
-    
-
+    }
 }
