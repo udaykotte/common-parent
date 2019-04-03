@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.apigee.api.commons</groupId>
+    <groupId>com.api.commons</groupId>
     <artifactId>parent-pom</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
@@ -34,8 +34,8 @@
         <deployment.suffix>${user.name}</deployment.suffix>
         <deployment.env>-${env}</deployment.env>
 
-        <org>sidgs</org>
-        <env>dev</env>
+        <org>udayk-eval</org>
+        <env>test</env>
 
         <apigee.api.protocol>https</apigee.api.protocol>
         <apigee.api.host>api.enterprise.apigee.com</apigee.api.host>
@@ -52,9 +52,9 @@
 
         <commit>${user.name}-local</commit>
         <branch>${user.name}-local</branch>
-        <!--<repo.server.protocol>https</repo.server.protocol>-->
-        <!--<repo.server.root>maven.firstcomp.com</repo.server.root>-->
-        <repo.path />
+        <repo.server.protocol>http</repo.server.protocol>
+        <repo.server.root>repo.clover.sidgs.net</repo.server.root>
+        <repo.path>content/repositories/</repo.path>
         <repo.name>apigee-</repo.name>
 
         <scmUsername />
