@@ -5,7 +5,7 @@
     <groupId>com.api.commons</groupId>
     <artifactId>parent-pom</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>parent-pom</name>
 
 
@@ -47,7 +47,7 @@
         <vhostDomainPort>80</vhostDomainPort>
         <vhostEdgeName>default</vhostEdgeName>
 
-        <jgitflow.version>1.0-m4.3</jgitflow.version>
+        <jgitflow.version>1.0.1-m4.3</jgitflow.version>
 
 
         <commit>${user.name}-local</commit>
